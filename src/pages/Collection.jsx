@@ -73,7 +73,7 @@ const Collection = () => {
       name: search,
       attributes: JSON.stringify(filterParam.traits),
     });
-console.log("2222222222222", response);
+
     const newItems = response.nfts.tokens;
     // const uniqueNewItems = newItems.filter(
     //   (newItem) => !nfts.some((item) => item.token_id === newItem.token_id)
