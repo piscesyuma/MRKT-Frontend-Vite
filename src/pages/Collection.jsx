@@ -73,12 +73,12 @@ const Collection = () => {
       name: search,
       attributes: JSON.stringify(filterParam.traits),
     });
-
-    const newItems = response.nfts;
+console.log("2222222222222", response);
+    const newItems = response.nfts.tokens;
     // const uniqueNewItems = newItems.filter(
     //   (newItem) => !nfts.some((item) => item.token_id === newItem.token_id)
     // );
-    const newItemCount = response.totalCounts;
+    const newItemCount = response.nfts.count;
     setNfts([...nfts, ...newItems]);
 
     // save only when first loading

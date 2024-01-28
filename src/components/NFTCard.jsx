@@ -85,7 +85,7 @@ const NFTCard = ({ nft, onSelectedNft, isSelled }) => {
           Buy
         </button>
         <img
-          src={`https://wsrv.nl/?url=${nft.image}&w=200&h=200&fit=outside`}
+          src={nft.image}
           className="w-full rounded-tr-lg group-hover:blur-sm transition"
           alt=""
         />
